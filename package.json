@@ -1,4 +1,5 @@
 {
+  "homepage": "https://${eduardo-puentes}.github.io/${celo-201-test}",
   "name": "celo-react-boilerplate",
   "version": "0.1.0",
   "private": true,
@@ -33,7 +34,9 @@
     "eject": "react-scripts eject",
     "compile": "npx hardhat compile",
     "deploy": "npx hardhat run --network alfajores scripts/deploy.js",
-    "test-contract": "npx hardhat test"
+    "test-contract": "npx hardhat test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
